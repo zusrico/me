@@ -1,0 +1,357 @@
+:root {
+    --background: #b9b9b9;
+    --surface: #a8a0a0;
+    --surface-light: #c0b0b0;
+    --accent: #ff3232;
+    --text-light: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background);
+    overflow: hidden;
+    color: var(--accent);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--accent);
+}
+
+h1{
+    margin: 0;
+}
+
+ul {
+    width: 70%;
+    background-color: var(--surface);
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    list-style-type: none;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--surface);
+    border-radius: 8px;
+}
+
+header, footer{
+    padding: 10px;
+}
+
+li{
+    flex: 0 0 auto;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    background-color: var(--surface-light);
+    border-radius: 6px;
+}
+
+a{
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer {
+    margin: 0 auto;
+    width: 40%;
+    color: var(--text-light);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.contact-page {
+    overflow: auto;
+}
+
+.contact-main {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 240px;
+    gap: 10%;
+    align-items: end;
+    padding: 8vh 0;
+}
+
+.contact-label,
+.home-label {
+    margin: 0 0 28px;
+    color: var(--text-light);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.contact-intro h2,
+.home-intro h2 {
+    margin: 0;
+    font-size: clamp(3.5rem, 10vw, 8rem);
+    line-height: 0.88;
+    letter-spacing: -0.06em;
+    text-transform: lowercase;
+}
+
+.home-intro h2 {
+    font-size: clamp(4rem, 11vw, 9rem);
+}
+
+.contact-intro h2 span,
+.home-intro h2 span {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.08em;
+}
+
+.contact-copy {
+    max-width: 430px;
+    margin: 40px 0 22px;
+    color: var(--text-light);
+    line-height: 1.45;
+}
+
+.contact-email,
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 2px solid var(--accent);
+    padding: 8px 0;
+    font-size: 1.2rem;
+}
+
+.contact-email span,
+.contact-links span {
+    font-size: 1.5rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid var(--accent);
+    padding-top: 12px;
+}
+
+.contact-links a {
+    font-size: 1rem;
+}
+
+.contact-page footer span {
+    color: var(--text-light);
+}
+
+.home-page {
+    overflow: auto;
+}
+
+.about-page {
+    overflow: auto;
+}
+
+.about-main {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 10%;
+    align-items: end;
+    padding: 8vh 0;
+}
+
+.about-label {
+    margin: 0 0 28px;
+    color: var(--text-light);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.about-intro h2 {
+    margin: 0;
+    font-size: clamp(4rem, 11vw, 9rem);
+    line-height: 0.88;
+    letter-spacing: -0.06em;
+    text-transform: lowercase;
+}
+
+.about-intro h2 span {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.08em;
+}
+
+.about-copy {
+    max-width: 440px;
+    margin: 40px 0 0;
+    color: var(--text-light);
+    line-height: 1.45;
+}
+
+.about-details {
+    border-top: 1px solid var(--accent);
+}
+
+.about-detail {
+    border-bottom: 1px solid var(--accent);
+    padding: 14px 0 18px;
+}
+
+.about-detail p {
+    margin: 0 0 12px;
+    color: var(--text-light);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.about-detail strong {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.about-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    font-size: 1.05rem;
+}
+
+.about-action span {
+    font-size: 1.5rem;
+}
+
+.home-main {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 10%;
+    align-items: end;
+    padding: 8vh 0;
+}
+
+.home-copy {
+    max-width: 390px;
+    margin: 40px 0 0;
+    color: var(--text-light);
+    line-height: 1.45;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--accent);
+}
+
+.project-list a {
+    display: grid;
+    grid-template-columns: 42px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 1px solid var(--accent);
+    padding: 16px 0;
+    font-size: 1.05rem;
+}
+
+.project-list a span {
+    color: var(--text-light);
+    font-size: 0.75rem;
+}
+
+.project-list a strong {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 650px) {
+    header {
+        gap: 20px;
+    }
+
+    .header-second {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    .contact-main {
+        display: block;
+        padding: 10vh 0 8vh;
+    }
+
+    .contact-intro h2 {
+        font-size: clamp(3rem, 17vw, 5rem);
+    }
+
+    .contact-links {
+        max-width: 240px;
+        margin-top: 56px;
+    }
+
+    .contact-page footer {
+        width: auto;
+        margin: 0 10px;
+    }
+
+    .contact-page footer span {
+        display: none;
+    }
+
+    .home-main {
+        display: block;
+        padding: 10vh 0 8vh;
+    }
+
+    .about-main {
+        display: block;
+        padding: 10vh 0 8vh;
+    }
+
+    .home-intro h2 {
+        font-size: clamp(3.5rem, 18vw, 5.5rem);
+    }
+
+    .project-list {
+        max-width: 360px;
+        margin-top: 56px;
+    }
+
+    .about-details {
+        max-width: 360px;
+        margin-top: 56px;
+    }
+
+    .about-intro h2 {
+        font-size: clamp(3.5rem, 18vw, 5.5rem);
+    }
+
+    .about-page footer {
+        width: auto;
+        margin: 0 10px;
+    }
+
+    .about-page footer span {
+        display: none;
+    }
+}
